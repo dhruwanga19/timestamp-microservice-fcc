@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp Microservice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            overflow-x: auto;
+            font-size: medium;
+        }
+        code {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Timestamp Microservice</h1>
+    <p>This microservice provides a simple API to convert dates to Unix timestamps and UTC strings.</p>
+
+    <h2>Example Usage:</h2>
+    <p>Make a GET request to <code>/api/:date?</code> where <code>:date</code> is an optional date parameter.</p>
+    <p>&bull; ISO date string: <a href="/api/2015-12-25">[project url]/api/2015-12-25</a></p>
+    <p>&bull; Unix timestamp: <a href="/api/1451001600000">[project url]/api/1451001600000</a></p>
+    <p>&bull; Natural language date (e.g., "December 25, 2015") <a href="/api/December 25, 2015">[project url]/api/December 25, 2015</a></p>
+    <p>&bull; Empty date parameter: <a href="/api/">[project url]/api/</a> will return the current date</p>
+    <h2>Example Output:</h2>
+    <pre><code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code></pre>
+</body>
+</html>

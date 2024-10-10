@@ -1,0 +1,31 @@
+{
+  "name": "timestamp-microservice-fcc",
+  "version": "1.0.0",
+  "description": "A timestamp generator application for freeCodeCamp Backend Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhruwanga19/timestamp-microservice-fcc.git"
+  },
+  "keywords": [
+    "Backend",
+    "Node",
+    "Express",
+    "Timestamp",
+    "Generator",
+    "Netlify"
+  ],
+  "author": "Dhruwang Akbari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhruwanga19/timestamp-microservice-fcc/issues"
+  },
+  "homepage": "https://github.com/dhruwanga19/timestamp-microservice-fcc#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
