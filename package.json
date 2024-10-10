@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/dhruwanga19/timestamp-microservice-fcc#readme",
   "dependencies": {
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0"
   }
 }
